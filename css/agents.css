@@ -1,0 +1,47 @@
+.agents{
+    width: 100%;
+    padding: 40px ;
+}
+.agents__team{
+    width: 100%;
+    gap: 24px;
+}
+.agents__team-member{
+
+}
+.member-caption{
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(0,0 ,0 ,0.8 );
+}
+.member-caption .member__name{
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.member-caption p{
+    font-size: 0.75rem;
+    margin: 8px 0 12px;
+}
+.member__socials{
+    font-size: 0.5rem;
+}
+.member__socials i{
+    margin: 0 8px;
+    padding: 8px;
+    border: 2px solid var(--text-color);
+    cursor: pointer;
+}
+.agents__team-member:hover .member__name {
+    color: var(--text-color);
+}
+.member__socials i:first-child:hover{
+    background-color: #4267b2;
+}
+.member__socials i:nth-child(2):hover{
+    background-color: var(--primary-color);
+}
+.member__socials i:last-child:hover{
+    background-color: #E95950;
+}

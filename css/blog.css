@@ -1,0 +1,144 @@
+.blog{
+    width: 100%;
+}
+
+.blog__content{
+    width: 85%;
+    gap: 32px;  
+}
+.blog__item{
+    border-top: 5px solid var(--primary-color);
+    background-color: #efefef ;
+    padding-bottom:  12px; 
+}   
+.blog__item h3{
+    margin: 12px 0;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+
+}
+.blog__item h3:hover{
+    color: #000;
+}
+.blog__item p{
+    font-size: 0.875rem;
+    color: #000;
+    padding: 12px ;
+    line-height: 26px;
+}
+.btn-blog{
+    margin:  12px ;
+    color: var(--primary-color);
+    
+}
+.btn-blog:hover{
+    color: var(--text-color);
+}
+
+.blog__info-more{
+    margin-top: 40px;
+    width: 100%;
+    background-color: var(--primary-color);
+    align-items: unset;
+}
+.blog__video{
+    flex: 1;
+    background: url(../img/b4.jpg) center/cover no-repeat;
+    height: 420px;
+    display: grid;
+    place-items: center;
+}
+.btn-video{
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    font-size: 2.5rem;
+    background: rgba(0, 189, 189, 0.53);
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+.blog__info{
+    flex: 1;
+    color: var(--text-color);
+    text-align: center;
+    padding: 40px;
+}
+.blog__info h2{
+    color: #000;
+    font-size: 2.625rem;
+    margin: 16px 0 ;
+}
+.blog__info p{
+    line-height: 2 ;
+    
+}
+
+
+
+/* Blog PopUp */
+
+.blog__popup{
+    position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+}
+.blog__popup.open{
+    display: block;
+}
+
+.blog__popup-content{
+    width: 50%;
+    min-height: 200px;
+    margin: 32px auto;   
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    z-index: 1001;
+    animation: popUp 0.5s ease;
+    
+}
+@keyframes popUp{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+}
+.blog__popup-header{
+    position: relative;
+    background-color: var(--primary-color);
+    padding: 16px 24px;
+}
+.blog__popup-header h2{
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+.blog__popup-header i{
+    font-size: 1.875rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    color: #000;
+}
+.blog__popup-header i:hover{
+    cursor: pointer;
+    color: #999;
+}
+.blog__popup-content img{
+    padding: 16px;
+}
